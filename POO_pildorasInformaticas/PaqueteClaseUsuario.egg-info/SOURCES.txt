@@ -1,0 +1,7 @@
+setup.py
+PaqueteClaseUsuario.egg-info/PKG-INFO
+PaqueteClaseUsuario.egg-info/SOURCES.txt
+PaqueteClaseUsuario.egg-info/dependency_links.txt
+PaqueteClaseUsuario.egg-info/top_level.txt
+paquetesUsuario/__init__.py
+paquetesUsuario/claseUsuario.py
