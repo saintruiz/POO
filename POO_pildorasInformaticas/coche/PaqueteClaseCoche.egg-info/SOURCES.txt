@@ -1,0 +1,7 @@
+setup.py
+PaqueteClaseCoche.egg-info/PKG-INFO
+PaqueteClaseCoche.egg-info/SOURCES.txt
+PaqueteClaseCoche.egg-info/dependency_links.txt
+PaqueteClaseCoche.egg-info/top_level.txt
+paquetesCoche/__init__.py
+paquetesCoche/claseCoche.py
