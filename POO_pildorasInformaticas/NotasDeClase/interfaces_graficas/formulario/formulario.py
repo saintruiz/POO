@@ -2,6 +2,7 @@ from tkinter import *
 
 root=Tk()
 root.title('Formulario')
+# root.iconbitmap('2Isotipo.ico')
 
 name_var=StringVar()
 email_var=StringVar()

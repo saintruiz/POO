@@ -1,0 +1,44 @@
+Operaciones Básicas:
+
+Suma
+Resta
+Multiplicación
+División
+
+-------------------
+Operaciones Avanzadas:
+Potenciación (elevar un número a una potencia)
+Raíz cuadrada
+---------------------------
+Operaciones con Decimales:
+
+Asegúrate de que tu calculadora pueda manejar números decimales en todas las operaciones.
+
+
+
+
+Manejo de Paréntesis:
+
+Permite la utilización de paréntesis para modificar el orden de las operaciones.
+
+
+Operaciones con Porcentaje:
+Calcular el porcentaje de un número.
+
+Operaciones con Números Negativos:
+Asegúrate de que la calculadora pueda manejar números negativos correctamente.
+
+Validación de Entrada:
+Implementa una validación robusta para asegurarte de que los usuarios ingresen datos correctos.
+
+Historial de Operaciones:
+Puedes considerar incluir un historial que muestre las operaciones realizadas.
+
+Manejo de Errores:
+Avisa al usuario si ocurre algún error, como dividir por cero o ingresar una operación inválida.
+
+Interfaz de Usuario (UI):
+Crea una interfaz amigable y fácil de entender para que los usuarios puedan interactuar fácilmente.
+
+Funcionalidades Adicionales:
+Puedes agregar funciones adicionales según tus necesidades o el propósito específico de la calculadora.
