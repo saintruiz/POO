@@ -1,0 +1,30 @@
+Haremos una práctica guiada en la cuál desarrollaremos una aplicación gráfica tipo CRUD
+
+En esta aplicación habrá varias secciones
+
+Sección superior (menú):
+    Llevará las siguientes opciones:
+        -BBBD
+            -Conectar: Crea la base de datos -Mensaje de información ('La Base de datos ha sido creada con éxito')
+            -Salir (Sale de la aplicación) -Mensaje de confirmación de salida
+        -Borrar (Borra campos)
+        -CRUD
+        -Ayuda (Licencia y Acerca De)
+
+    
+Sección central (campos de texto):
+    -ID (Númerico, autoincrementa y llave única) --Sólo se visualiza en la BBDD
+    -Nombre
+    -Apellidos
+    -Password
+    -Dirección
+    -Comentarios
+
+Sección inferior:
+    -Create (Se guardan los campos en la base de datos) --Mensaje de información ('Se ha creado el usuario con éxito')
+    -Read:
+        Si se hunde el botón de read, se muestre una pantalla donde se ingresa el id del usuario y se devuelve la información
+    -Update
+        Se ingresa el id del usuario que se va a actualizar, (READ), se edita el campo que se va a actualizar y (UPDATE)
+    -Delete
+        Se ingresa el ID del usuario que se va a eliminar
