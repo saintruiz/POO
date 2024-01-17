@@ -22,6 +22,8 @@ def pulsarBoton(n:str):
     else:
         mainString.set(mainString.get() + n)
 
+
+
 #FILA DE LA PANTALLA
 pantalla=Entry(mainFrame, bg='Black', fg='#03f943', justify='right', width=75, textvariable=mainString).grid(row=0, columnspan=4, padx=10, pady=10)
 
