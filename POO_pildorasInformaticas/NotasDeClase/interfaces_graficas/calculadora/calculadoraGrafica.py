@@ -13,7 +13,7 @@ mainFrame.pack()
 #----------------------ESPACIO PARA FUNCIONES----------------------
 
 mainString=StringVar()
-
+operation=''
 
 def pulsarBoton(n:str):
     if n=='0' and mainString.get()=='':
@@ -21,9 +21,6 @@ def pulsarBoton(n:str):
         pass
     else:
         mainString.set(mainString.get() + n)
-
-def clearText():
-    mainString.set('')
 
 #FILA DE LA PANTALLA
 pantalla=Entry(mainFrame, bg='Black', fg='#03f943', justify='right', width=75, textvariable=mainString).grid(row=0, columnspan=4, padx=10, pady=10)
