@@ -1,18 +1,14 @@
 from tkinter import *
+from mainFunctions import *
 
 root=Tk()
 root.title('CRUD')
 
-
-
 #FILA SUPERIOR-------------------------------
 
-barMenu=Menu(background='#BF00FF', fg='black', border=3)
+barMenu=Menu(background='#FFB81C', fg='black', border=3)
 
 ##Espacio para botón BBDD
-def Conect_():
-    print('Conectando a la base de datos')
-    pass
 def Exit_():
     root.destroy()
 
@@ -74,7 +70,7 @@ barMenu.add_command(label='Ayuda',command=Ayuda_)
 
 #BLOQUE MEDIO----------------------------------------------
 
-frm=Frame(root, background='#BF00FF').config(width=500, height=500)
+frm=Frame(root, background='#FFB81C').config(width=500, height=500)
 
 
 IDvar=StringVar()
@@ -95,16 +91,16 @@ lastNameLabel=Label(frm, text='Last Name' ).grid(row=2, column=0)
 lastNameEntry=Entry(frm, textvariable=lastNameVar, width=50).grid(row=2, columnspan=3, column=1, padx=20, pady=20)
 
 pswdLabel=Label(frm, text='Password' ).grid(row=3, column=0)
-pswdEntry=Entry(frm, textvariable=pswdVar, width=50).grid(row=3, columnspan=3, column=1, padx=20, pady=20)
+pswdEntry=Entry(frm, textvariable=pswdVar, show='$',width=50).grid(row=3, columnspan=3, column=1, padx=20, pady=20)
 
 addLabel=Label(frm, text='Address' ).grid(row=4, column=0)
 addEntry=Entry(frm, textvariable=addrVar, width=50).grid(row=4, columnspan=3, column=1, padx=20, pady=20)
 
-createBT=Button(frm, text='Create', command=Create_, background='#BF00FF').grid(row=5, column=0)
-readBT=Button(frm, text='Read', command=Read_, background='#BF00FF').grid(row=5, column=1)
-updateBT=Button(frm, text='Update', command=Update_, background='#BF00FF').grid(row=5, column=2)
-deleteBT=Button(frm, text='Delete', command=Delete_, background='#BF00FF').grid(row=5, column=3)
-new=Button()
+createBT=Button(frm, text='Create', command=Create_, background='#FFB81C').grid(row=5, column=0)
+readBT=Button(frm, text='Read', command=Read_, background='#FFB81C').grid(row=5, column=1)
+updateBT=Button(frm, text='Update', command=Update_, background='#FFB81C').grid(row=5, column=2)
+deleteBT=Button(frm, text='Delete', command=Delete_, background='#FFB81C').grid(row=5, column=3)
+
 
 
 root.config(menu=barMenu)
