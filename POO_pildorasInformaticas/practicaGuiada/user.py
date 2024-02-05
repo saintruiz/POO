@@ -9,12 +9,12 @@ class user():
         self.__addr=addr
 
     def Create_(self):
-        userList=[self.__id, self.__name, self.__lastName, self.__pswd, self.__addr]
+        data=[self.__id, self.__name, self.__lastName, self.__pswd, self.__addr]
 
         try:
             con=sqlite3.connect('main.bd')
             cur=con.cursor()
-            cur.executemany('INSERT INTO main VALUES(NULL,?,?,?,?,?)', userList)
+            cur.execute('INSERT INTO main VALUES(?,?,?,?,?)', data)
             con.commit()
             con.close()
             return 'El usuario ha sido creado en la base de datos'
@@ -22,3 +22,4 @@ class user():
         except sqlite3.Error as e:
             result=(f'Error al crear usuario: {e}')
             return result
+        

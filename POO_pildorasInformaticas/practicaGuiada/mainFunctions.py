@@ -5,8 +5,7 @@ def Conect_():
         con=sqlite3.connect("main.bd")
         cur=con.cursor()
         cur.execute("""CREATE TABLE main(
-                    key INTEGER PRIMARY KEY AUTOINCREMENT,
-                    ID VARCHAR(5),
+                    ID VARCHAR(5) PRIMARY KEY,
                     name VARCHAR(50),
                     lastName VARCHAR(50),
                     pswd VARCHAR(50),

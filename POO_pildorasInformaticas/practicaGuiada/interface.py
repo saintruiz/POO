@@ -26,13 +26,25 @@ menuBBDD.add_command(
 
 ##Espacio para botón Borrar
 def Clean_():
-    pass
+    IDvar.set('')
+    nameVar.set('')
+    lastNameVar.set('')
+    pswdVar.set('')
+    addrVar.set('')
+    print('Interface has been cleaned')
 
 barMenu.add_command(label='Borrar', command=Clean_)
 
 ##Espacio para boton CRUD
-def Create_():
-    pass
+def CreateUser():
+    CreateInB(IDvar.get(), nameVar.get(), lastNameVar.get(), pswdVar.get(), addrVar.get())
+    IDvar.set('')
+    nameVar.set('')
+    lastNameVar.set('')
+    pswdVar.set('')
+    addrVar.set('')
+    print('User has been created')
+
 def Read_():
     pass
 def Update_():
@@ -46,7 +58,7 @@ barMenu.add_cascade(menu=menuCRUD, label='CRUD')
 
 menuCRUD.add_command(
     label='Create',
-    command=Create_
+    command=CreateUser
 )
 menuCRUD.add_command(
     label='Read',
@@ -65,7 +77,7 @@ menuCRUD.add_command(
 
 def Ayuda_():
     pass
-barMenu.add_command(label='Ayuda',command=Ayuda_)
+barMenu.add_command(label='Help',command=Ayuda_)
 
 
 #BLOQUE MEDIO----------------------------------------------
@@ -96,7 +108,7 @@ pswdEntry=Entry(frm, textvariable=pswdVar, show='$',width=50).grid(row=3, column
 addLabel=Label(frm, text='Address' ).grid(row=4, column=0)
 addEntry=Entry(frm, textvariable=addrVar, width=50).grid(row=4, columnspan=3, column=1, padx=20, pady=20)
 
-createBT=Button(frm, text='Create', command=Create_, background='#FFB81C').grid(row=5, column=0)
+createBT=Button(frm, text='Create', command=CreateUser, background='#FFB81C').grid(row=5, column=0)
 readBT=Button(frm, text='Read', command=Read_, background='#FFB81C').grid(row=5, column=1)
 updateBT=Button(frm, text='Update', command=Update_, background='#FFB81C').grid(row=5, column=2)
 deleteBT=Button(frm, text='Delete', command=Delete_, background='#FFB81C').grid(row=5, column=3)
