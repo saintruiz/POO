@@ -1,4 +1,5 @@
 import sqlite3
+from user import *
 def Conect_():
     try:
         con=sqlite3.connect("main.bd")
@@ -24,5 +25,6 @@ def Conect_():
     
     
     
-def Create_(Id:int, name:str, lasName:str, pswd:str, addr:str):
-    pass
+def CreateInB(Id:str, name:str, lastName:str, pswd:str, addr:str):
+    User_=user(Id, name, lastName, pswd, addr)
+    return User_.Create_()
