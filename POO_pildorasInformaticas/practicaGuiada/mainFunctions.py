@@ -27,3 +27,13 @@ def Conect_():
 def CreateInB(Id:str, name:str, lastName:str, pswd:str, addr:str):
     User_=user(Id, name, lastName, pswd, addr)
     return User_.Create_()
+
+def Read_(id:str) -> list:
+    query=(f"SELECT * FROM main WHERE ID={id}")
+    con=sqlite3.connect('main.bd')
+    cur=con.cursor()
+    data=cur.execute(query)
+    con.commit()
+    con.close()
+
+    return data
